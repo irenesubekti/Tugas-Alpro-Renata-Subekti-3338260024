@@ -1,0 +1,30 @@
+---
+title: "Tugas ALPRO 1 Renata"
+author: "Renata Subekti"
+date: "2026-09-20"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Cek bilangan ganjil/genap
+
+```{r}
+ganjil_genap <- function(bilangan) {
+  ifelse(bilangan %% 2 == 0, "genap", "ganjil")
+}
+```
+
+### Contoh penggunaan
+
+```{r}
+# Cek satu bilangan
+ganjil_genap(53)
+ganjil_genap(42)
+ganjil_genap(8263375)
+
+# Cek banyak bilangan
+input <- c(10,21,32,43,54)
+ganjil_genap(input)
